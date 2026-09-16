@@ -1,44 +1,8 @@
 <div align="center">
 
-# Nai Frog for Codex
+# Nai Frog for CCHaha
 
 **[简体中文](./README.md) · English**
-
-A custom Nai Frog / Naiwa Pet for the [Codex App](https://openai.com/index/introducing-the-codex-app/).
-
-</div>
-
-## Quick Install
-
-> [!NOTE]
-> Through Petdex, the Nai Frog desktop pet can now be used with the following coding agents:
-
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/claude-code.png" width="40" height="40" alt="Claude Code" /><br /><sub><strong>Claude Code</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/codex.png" width="40" height="40" alt="Codex" /><br /><sub><strong>Codex</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/gemini.png" width="40" height="40" alt="Gemini CLI" /><br /><sub><strong>Gemini CLI</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/opencode-light.png" width="40" height="40" alt="OpenCode" /><br /><sub><strong>OpenCode</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/qoder.png" width="40" height="40" alt="Qoder" /><br /><sub><strong>Qoder</strong></sub></td>
-  </tr>
-  <tr>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/kimi-code.png" width="40" height="40" alt="Kimi Code" /><br /><sub><strong>Kimi Code</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/codebuddy.png" width="40" height="40" alt="CodeBuddy" /><br /><sub><strong>CodeBuddy</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/omp.png" width="40" height="40" alt="OMP" /><br /><sub><strong>OMP</strong></sub></td>
-    <td align="center" width="20%"><img src="https://cdn.jsdelivr.net/gh/crafter-station/petdex@5d1844be151bb4e613b62b2e50a70bc8e1540d65/packages/petdex-desktop-native/src/assets/agents/hermes.png" width="40" height="40" alt="Hermes" /><br /><sub><strong>Hermes</strong></sub></td>
-    <td align="center" width="20%"><img src="https://api.iconify.design/simple-icons:deepseek.svg?color=%234D6BFE" width="40" height="40" alt="DeepSeek Harness" /><br /><sub><strong>DeepSeek Harness</strong></sub></td>
-  </tr>
-</table>
-
-</div>
-
-Send this instruction to your development tool:
-
-```
-Please install this Nai Frog desktop pet: https://petdex.dev/pets/nailong-7, and automatically install and enable it for my current development tool.
-```
 
 ## Animation Preview
 
@@ -76,65 +40,12 @@ Please install this Nai Frog desktop pet: https://petdex.dev/pets/nailong-7, and
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/timerring/codex-pet-naiwa.git
+   git clone https://github.com/ShukebtAb/cchaha-pet-naiwa
    ```
 
-2. Open **Settings → Pets → Custom pets → Open folder** in the Codex App.
-3. Copy the repository's `naifrog` folder into the opened directory.
-4. Return to the Codex App, select **Refresh**, then choose Nai Frog.
-
-### Command Line
-
-#### macOS / Linux
-
-```bash
-git clone https://github.com/timerring/codex-pet-naiwa.git
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/pets/naifrog"
-cp -R codex-pet-naiwa/naifrog/. "${CODEX_HOME:-$HOME/.codex}/pets/naifrog/"
-```
-
-#### Windows PowerShell
-
-```powershell
-git clone https://github.com/timerring/codex-pet-naiwa.git
-$codexHome = if ($env:CODEX_HOME) { $env:CODEX_HOME } else { Join-Path $HOME ".codex" }
-$petDir = Join-Path $codexHome "pets\naifrog"
-New-Item -ItemType Directory -Force $petDir | Out-Null
-Copy-Item ".\codex-pet-naiwa\naifrog\*" $petDir -Recurse -Force
-```
-
-## About ChatGPT Web
-
-> [!NOTE]
-> Custom pets are managed separately in the Codex desktop app and ChatGPT web. Nai Frog installed on desktop cannot sync to the web.
-
-<p align="center">
-  <img src="./naifrog/previews/chatgpt-web-pet.png" width="382" alt="Nai Frog in ChatGPT web" />
-</p>
-
-For ChatGPT web, download [`naifrog/web-spritesheet.png`](./naifrog/web-spritesheet.png), then upload it from **Settings → Personalization → Pet → Upload pet**. This is the required `1536 × 1872` transparent PNG; the desktop `spritesheet.webp` (`1536 × 2288`) cannot be uploaded directly to the web.
-
-Alternatively, ask Codex to upload it directly:
-
-> Set up this Nai Frog as my ChatGPT web pet: <https://github.com/timerring/codex-pet-naiwa>. Download `naifrog/web-spritesheet.png` from the repository, then open **Settings → Personalization → Pet → Upload pet** in my signed-in ChatGPT web session, upload and enable Nai Frog, and tell me when it is complete.
-
-## Files
-
-```text
-naifrog/
-├── pet.json
-├── spritesheet.webp
-├── web-spritesheet.png
-└── previews/
-    ├── chatgpt-web-pet.png
-    └── …
-```
-
-- `pet.json`: pet metadata
-- `spritesheet.webp`: Codex v2 animation spritesheet
-- `web-spritesheet.png`: ChatGPT web upload asset
-- `previews/chatgpt-web-pet.png`: ChatGPT web appearance preview
-- `previews/`: README preview images; not required by the pet
+2. Open **Settings → Pets → Custom pets → Open folder** in the cchaha App.
+3. Copy the repository's `naiwa` folder into the opened directory.
+4. Return to the Codex App, select **Refresh**, then choose Naiwa.
 
 ## Credits
 
