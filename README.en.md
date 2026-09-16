@@ -49,8 +49,7 @@
 
 ## Credits
 
-- [Nitrogen216/awesome_pets](https://github.com/Nitrogen216/awesome_pets)
-- [LynnShaw/naiwa-pet](https://github.com/LynnShaw/naiwa-pet)
+- [timerring/codex-pet-naiwa](https://github.com/timerring/codex-pet-naiwa)
 
 ## License
 
